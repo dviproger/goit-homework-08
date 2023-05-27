@@ -51,10 +51,10 @@ def get_birthdays_per_week(data_users):
 
         if 1 <= delta_day <= 7:
 
-            if 0 <= ub.weekday() <= 5 and delta_day < end_week:
+            if 0 <= ub.weekday() <= 4 and delta_day < end_week:
                 birthdays_carrent_weekday[ub.weekday()].append(user['name'])
 
-            elif 0 <= ub.weekday() <= 5 and delta_day >= end_week:
+            elif 0 <= ub.weekday() <= 4 and delta_day >= end_week:
                 birthdays_next_weekday[ub.weekday()].append(user['name'])
 
             else:
